@@ -22,6 +22,8 @@
     --button-border-color: #353430;
     --button-hover-color: rgba(50, 49, 45, 0.40);
     --decoration-color: #353430;
+
+    --bg-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .decoration {
@@ -47,6 +49,8 @@
         --button-border-color: #353430;
         --button-hover-color: rgba(50, 49, 45, 0.40);
         --decoration-color: #353430;
+
+        --bg-image: url(../images/cover-image-light.png);
     }
 
     .page.theme_auto .decoration {
