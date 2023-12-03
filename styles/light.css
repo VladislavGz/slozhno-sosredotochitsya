@@ -1,12 +1,61 @@
 /*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
+    Специально для светлой темы при наличии класса.
+    Здесь окажутся стили, которые нужно переопределить принудительно,
+    переключая тему
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    /*
+        сохраните этот селектор в приведённом виде.
+        Так стили написанные ниже будут иметь больший вес,
+        чем стили в медиазапросе предпочтений пользователя
+    */
+
+    --main-color: #FFF1F7;
+    --accent-color: #FF8DCB;
+    --title-text-color: #FFC2E6;
+    --title-shadow-color: #FF0070;
+    --title-decor-text-color: #353430;
+    --title-section-text-color: #353430;
+    --text-color: #353430;
+    --button-text-color: #353430;
+    --button-border-color: #353430;
+    --button-hover-color: rgba(50, 49, 45, 0.40);
+    --decoration-color: #353430;
+}
+
+.page.theme_light .decoration {
+    display: none;
+}
+
+@media (width < 1024px) {
+    .page.theme_light {
+        --title-shadow-color: #FF8DCB;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .page.theme_auto {
+        --main-color: #FFF1F7;
+        --accent-color: #FF8DCB;
+        --title-text-color: #FFC2E6;
+        --title-shadow-color: #FF0070;
+        --title-decor-text-color: #353430;
+        --title-section-text-color: #353430;
+        --text-color: #353430;
+        --button-text-color: #353430;
+        --button-border-color: #353430;
+        --button-hover-color: rgba(50, 49, 45, 0.40);
+        --decoration-color: #353430;
+    }
+
+    .page.theme_auto .decoration {
+        display: none;
+    }
+
+    @media (width < 1024px) {
+        .page.theme_auto {
+            --title-shadow-color: #FF8DCB;
+        }
+    }
 }
