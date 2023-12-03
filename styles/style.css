@@ -80,7 +80,7 @@
     padding-block-end: 2px;
 
     background-color: transparent;
-    border: 1px solid transparent;
+    border: none;
 
     color: var(--button-text-color);
 
@@ -93,7 +93,7 @@
 }
 
 .header__theme-menu-button:hover {
-    border: 1px solid var(--button-hover-color);
+    outline: 1px solid var(--button-hover-color);
     cursor: pointer;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .header__theme-menu-button_active {
-    border-color: var(--button-border-color);
+    outline: 1px solid var(--button-border-color);
     pointer-events: none;
 }
 
